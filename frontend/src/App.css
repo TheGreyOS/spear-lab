@@ -6,9 +6,40 @@ body {
 }
 
 .spear-lab-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-box {
+  background: #222733;
+  border-radius: 8px;
+  padding: 28px 36px;
+  margin: 16px 0 28px 0;
+  color: #b8e0ff;
+  max-width: 1100px;
+  width: 100%;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+/* Make the Learn More modal scrollable if content overflows */
+.learn-modal {
+  background: #23283a;
+  border-radius: 10px;
+  padding: 36px;
+  max-width: 90vw;
+  max-height: 90vh;
+  color: #e0e9ff;
+  box-shadow: 0 8px 32px #0008;
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -51,9 +82,31 @@ h1 {
 .lab-main {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: flex-start;
   justify-content: center;
+  width: 100%;
+  min-width: 900px;
+  max-width: 1300px;
+  margin: 0 auto;
+  flex: 1;
+}
+
+.lab-grid-col {
+  flex: 2 1 0;
+  min-width: 420px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lab-sidebar-col {
+  flex: 1 1 340px;
+  min-width: 320px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 canvas {
@@ -66,9 +119,11 @@ canvas {
 .metrics {
   background: #212732;
   border-radius: 8px;
-  padding: 1.2rem 1.5rem;
-  min-width: 220px;
+  padding: 1.5rem 2rem;
+  min-width: 0;
+  width: 100%;
   box-shadow: 0 1px 8px #0006;
+  margin-bottom: 1.5rem;
 }
 
 .metrics h2 {
@@ -87,8 +142,16 @@ canvas {
   .lab-main {
     flex-direction: column;
     align-items: center;
+    min-width: 100%;
+    max-width: 100vw;
   }
   .metrics {
     margin-top: 1.5rem;
+    max-width: 95vw;
+    min-width: 220px;
+  }
+  .spear-lab-container {
+    padding: 1rem;
+    min-width: 100vw;
   }
 }

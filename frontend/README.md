@@ -1,31 +1,46 @@
-# React + TypeScript + Vite
+# SPEAR Lab: Symbolic Physics Emergence and Recursion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**SPEAR Lab** is an interactive scientific discovery platform for exploring symbolic physics, emergence, and phase transitions on a grid. Built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What is SPEAR Lab?
+SPEAR Lab lets you experiment with simple symbolic rules on a grid to witness how order, complexity, and even "laws of nature" can emerge from chaos. Each cell can be ⊕ (blue), ⊖ (red), or neutral (black). By tweaking neighbor thresholds and seeding patterns, you can observe:
+- The emergence of order from randomness
+- Phase transitions (when the grid becomes all one color)
+- Entropy and complexity in real time
+- How local rules can create global structure
 
-## Expanding the ESLint configuration
+## Features
+- Interactive symbolic grid with customizable rules
+- Metrics and entropy graph for scientific analysis
+- Guided tour and "Learn More" modal explaining the science
+- Pattern import/export for reproducible experiments
+- Custom experiment presets (matter, gravity, light-like oscillations)
+- Built-in log for tracking discoveries
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Quick Start
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+2. **Run the app locally:**
+   ```bash
+   npm run dev
+   ```
+3. Open your browser to the local address printed in the terminal (usually `http://localhost:5173`)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
+## About GreyOS
+SPEAR Lab is built by [GreyOS](https://greyos.org) — a next-generation operating system and research collective. GreyOS is on a mission to reimagine computing as a creative, scientific, and collaborative process. We build open tools and experiments that empower users to explore, invent, and understand the nature of complex systems — from physics to consciousness.
+
+> **Learn more at [greyos.org](https://greyos.org)**
+
+## Contributing
+Pull requests and issues are welcome! If you have ideas for new features, improvements, or scientific experiments, please open an issue or submit a PR.
+
+## License
+MIT
+
     },
   },
 })
