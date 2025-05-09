@@ -1,0 +1,94 @@
+body {
+  background: #181c22;
+  color: #e0e6ef;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+}
+
+.spear-lab-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #42a5f5;
+  letter-spacing: 0.02em;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.controls label {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.controls select, .controls button {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  padding: 0.4em 0.9em;
+  border-radius: 5px;
+  border: none;
+  background: #263040;
+  color: #e0e6ef;
+  transition: background 0.2s;
+}
+.controls button:hover, .controls select:focus {
+  background: #42a5f5;
+  color: #fff;
+}
+
+.lab-main {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+canvas {
+  background: #111;
+  box-shadow: 0 2px 12px #000a;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.metrics {
+  background: #212732;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  min-width: 220px;
+  box-shadow: 0 1px 8px #0006;
+}
+
+.metrics h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: #42a5f5;
+  margin-bottom: 1rem;
+}
+
+.metrics p {
+  margin: 0.5em 0;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 900px) {
+  .lab-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .metrics {
+    margin-top: 1.5rem;
+  }
+}

@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+# Node
+node_modules/
+build/
+dist/
+.env.local
+.env.*.local
+# VSCode
+.vscode/
+# OS
+.DS_Store
+Thumbs.db
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Misc
+.spear-lab-local/
